@@ -33,7 +33,7 @@ set display=lastline
 " Encoding setting
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,latin1
+set fileencodings=ucs-boms,utf-8,euc-jp,cp932
 set termencoding=utf-8
 language messages en_US.utf-8
 

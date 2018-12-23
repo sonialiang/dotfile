@@ -68,7 +68,7 @@ if(has("mac"))
   nnoremap <D-5> ggVG:RetabIndent<CR>
   nnoremap <D-6> ggVG:Tab2Space<CR>
   " Full Fucking Window ^M ending line file!
-  nnoremap <D-7> :%s////g<CR>
+  nnoremap <D-7> :%s////g<CR>
 else
   nnoremap <F2> :NERDTreeToggle<CR>
   nnoremap <F3> :exec exists('syntax_on') ? 'syn off': 'syn on'<CR>
@@ -76,10 +76,11 @@ else
   nnoremap <F8> ggVG:RetabIndent<CR>
   nnoremap <F9> ggVG:Tab2Space<CR>
   " Full Fucking Window ^M ending line file!
-  nnoremap <F10> :%s////g<CR>
+  nnoremap <F10> :%s////g<CR>
 endif
 
 " Normal Key Map
+nnoremap <F12> :set invnumber<CR>
 nnoremap U :redo<CR>
 nnoremap Q :q!<CR>
 nnoremap W :w!<CR>
@@ -174,7 +175,7 @@ nnoremap <C-x> :bdelete<CR>
 " Check Vim Syntax name Fn
 nnoremap <leader>yi :call <SID>SynStack()<CR>
 
-" Repeat Preview 
+" Repeat Preview
 nnoremap <leader>. @:
 vnoremap <leader>. :normal .<CR>
 
