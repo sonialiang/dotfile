@@ -101,7 +101,7 @@ Plug 'ap/vim-css-color'
 Plug 'elzr/vim-json'
 Plug 'bcicen/vim-jfmt' " brew install jq
 Plug 'plasticboy/vim-markdown'
-" Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 " Plug 'jeaye/color_coded'
 
 " @ Plugin --- [ Code Format ]
@@ -130,9 +130,12 @@ Plug 'kana/vim-textobj-line'
 
 " @ Plugin --- [ ColorScheme ]
 
-Plug 'DemonCloud/vim-autoclose'
+" Plug 'DemonCloud/vim-autoclose'
 
 Plug 'DemonCloud/J'
+Plug 'cocopon/iceberg.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Plug 'morhetz/gruvbox'
 " Plug 'ayu-theme/ayu-vim'
 

@@ -1,7 +1,8 @@
 " @ COLOR Themes
 try
     " colorscheme ayu
-    colorscheme J
+    "colorscheme J
+    colorscheme iceberg
     "colorscheme monochrome
     "colorscheme seoul256
     "colorscheme distinguished
