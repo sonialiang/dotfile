@@ -134,8 +134,8 @@ Plug 'kana/vim-textobj-line'
 
 Plug 'DemonCloud/J'
 Plug 'cocopon/iceberg.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Plug 'morhetz/gruvbox'
 " Plug 'ayu-theme/ayu-vim'
 
