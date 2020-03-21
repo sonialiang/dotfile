@@ -1,6 +1,6 @@
 " @ COLOR Themes
 try
-    " colorscheme ayu
+    "colorscheme ayu
     "colorscheme J
     colorscheme iceberg
     "colorscheme monochrome

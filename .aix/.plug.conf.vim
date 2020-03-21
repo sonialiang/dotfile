@@ -1,17 +1,10 @@
 " ========================= Plugin Config Start =========================
-" Yggdroot/indentLine
-let g:indentLine_setColors = 0
-let g:indentLine_bgcolor_term = 202
-let g:indentLine_bgcolor_gui = '#FF5F00'
-let g:indentLine_color_term = 239
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-
 " AirLine
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
-let g:airline#extensions#branch#enabled = 0
+"let g:airline#extensions#branch#enabled = 0
 let g:airline#parts#ffenc#skip_expected_string = 'utf-8[unix]'
-" let g:airline_theme = "zenburn"
+"let g:airline_theme = "zenburn"
 let g:airline_theme = "ayu_mirage"
 
 " use Aix.font
@@ -226,5 +219,12 @@ let g:xml_syntax_folding = 1
 " let g:WebDevIconsUnicodeDecorateFileNodes = 1
 " let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 " let g:WebDevIconsOS = 'Darwin'
+
+command! -bang -nargs=* Rg
+\ call fzf#vim#grep(
+\ 'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>), 1,
+\ <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'up:60%')
+\ : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}, 'right:50%:hidden', '?'),
+\ <bang>0)
 
 "========================= Plugin Config End =========================

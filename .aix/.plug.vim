@@ -44,7 +44,7 @@ Plug 'haya14busa/is.vim'
 " Plug 'Valloric/YouCompleteMe'
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
-Plug 'letientai299/vim-react-snippets', { 'branch': 'es6' }
+"Plug 'letientai299/vim-react-snippets', { 'branch': 'es6' }
 Plug 'honza/vim-snippets'
 Plug 'Shougo/vimproc', { 'do': 'make' }
 Plug 'Shougo/neoinclude.vim'
@@ -82,7 +82,7 @@ Plug 'chrisbra/vim-diff-enhanced'
 
 " @ Plugin --- [ Syntax ]
 Plug 'fatih/vim-go'
-Plug 'kh3phr3n/python-syntax'
+"Plug 'kh3phr3n/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'groenewege/vim-less'
 Plug 'lepture/vim-velocity'
@@ -93,7 +93,7 @@ Plug 'jason0x43/vim-js-indent'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'Quramy/tsuquyomi'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'mxw/vim-jsx'
+"Plug 'mxw/vim-jsx'
 " Plug 'neoclide/vim-jsx-improve'
 Plug 'othree/xml.vim'
 Plug 'othree/html5.vim'
@@ -132,7 +132,7 @@ Plug 'kana/vim-textobj-line'
 
 " Plug 'DemonCloud/vim-autoclose'
 
-Plug 'DemonCloud/J'
+" Plug 'DemonCloud/J'
 Plug 'cocopon/iceberg.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -155,6 +155,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 endif
 " Plug 'ryanoasis/vim-devicons'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " ---- Plug List Complete ----
 call plug#end()

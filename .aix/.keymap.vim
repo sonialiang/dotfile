@@ -62,7 +62,9 @@ endfunction
 " -------------- Tooling Function Ending ------------------
 
 if(has("mac"))
-  nnoremap <D-2> :NERDTreeToggle<CR>
+  nnoremap <silent> <leader>e :NERDTreeToggle<cr>
+  nnoremap <silent> <leader>f :NERDTreeFind<cr>
+  "nnoremap <D-2> :NERDTreeToggle<CR>
   nnoremap <D-3> :exec exists('syntax_on') ? 'syn off': 'syn on'<CR>
   nnoremap <D-4> mzgg=G`z
   nnoremap <D-5> ggVG:RetabIndent<CR>
@@ -269,4 +271,7 @@ nmap <Leader>py <Plug>(Prettier)
 " jsDoc
 nmap <silent> <C-l> <Plug>(jsdoc)
 
+nnoremap <C-g> :Rg<Space>
+nnoremap <leader><leader> :Commands<CR>
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " ========================= KeyFire Setting End =========================

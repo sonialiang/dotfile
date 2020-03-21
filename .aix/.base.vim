@@ -15,3 +15,6 @@ set history=9888
 
 " @ Replace <leader> key map to <space>
 let mapleader=" "
+
+" how do I get NERDTree to show dot files
+let NERDTreeShowHidden=1
