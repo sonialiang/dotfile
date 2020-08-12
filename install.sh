@@ -78,11 +78,6 @@ printf "\n"
 cp -rf .aix $HOME/
 cp -f .vimrc $HOME/
 # # support NeoVim
-# sudo cp -f sysinit.vim /usr/share/nvim/
-if [ ! -f "$HOME/.tmux.conf" ]; then
-	printf "\033[36mCopy tmux.conf!\033[0m\n"
-	cp -f .tmux.conf $HOME/
-fi
 
 printf "\033[36mCopy Completed, Finish Install !\033[0m\n"
 printf "\033[33mPlease Checking Completed!\033[0m\n"
