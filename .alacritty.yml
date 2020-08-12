@@ -1,0 +1,24 @@
+# tmuxを起動
+shell:
+  program: /bin/zsh
+  args:
+    - -c
+    - "tmux"
+
+
+# font設定
+font:
+  size: 12.5
+  normal:
+    family: Fira Code
+  bold:
+    family: Fira Code
+  italic:
+    family: Fira Code
+
+key_bindings:
+  - { key: Q, mods: Control, chars: "\x11" } # 暫定対応 masterブランチでは解決済みらしい
+  - { key: Up,       mods: Alt,     chars: "\x1b[1;5A"                   }
+  - { key: Down,     mods: Alt,     chars: "\x1b[1;5B"                   }
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       }

@@ -125,3 +125,9 @@ start Vim and run ``:PlugInstall`` at first time
 `gem install scss_lint`
 
 `brew install jq`
+
+### zsh
+
+`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k`
+`p10k configure`
+`echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc`
