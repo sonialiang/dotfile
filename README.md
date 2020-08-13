@@ -139,3 +139,8 @@ start Vim and run ``:PlugInstall`` at first time
 `~/.alacritty.yml`
 
 `~/.hammerspoon/init.lua`
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
