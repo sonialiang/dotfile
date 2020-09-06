@@ -1,16 +1,5 @@
-format = "$username"
-# Don't print a new line at the start of the prompt
-# add_newline = false
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character]      # The name of the module we are configuring is "character"
-symbol = "🍜➜"     # The "symbol" segment is being set to "➜"
-
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
-
 prompt_order = [
+    "time",
     "username",
     "hostname",
     # "gcloud",
@@ -48,9 +37,19 @@ prompt_order = [
     "line_break",
     "jobs",
     "battery",
-    "time",
     "character",
 ]
+# format = "$username"
+# Don't print a new line at the start of the prompt
+# add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "🍜➜"     # The "symbol" segment is being set to "➜"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
 
 [hostname]
 ssh_only = false
@@ -64,6 +63,14 @@ style = "dimmed green"
 disabled = false
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
+"docker-desktop" = "desktop"
+
+[time]
+disabled = false
+# format = "🕙[ %T ]"
+# format = "[%T]"
+utc_time_offset = "local"
+time_range = "-"
 
 [directory]
 truncation_length = 8
@@ -72,11 +79,8 @@ truncate_to_repo = false
 [aws]
 disabled = true
 
-[time]
+[cmd_duration]
 disabled = true
-format = "🕙[ %T ]"
-utc_time_offset = "-5"
-time_range = "10:00:00-14:00:00"
 
 # [gcloud]
 # disabled = false

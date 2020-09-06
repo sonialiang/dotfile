@@ -4,13 +4,21 @@
 .bash_profile@ -> /Users/liangsonia/git_resources/dotfile/bash/.bash_profile
 .common_alias@ -> /Users/liangsonia/git_resources/dotfile/.sh_path_and_aliases.d/.common_alias
 .git-completion.bash@ -> /Users/liangsonia/git_resources/dotfile/git/.git-completion.bash
+.git-prompt.sh@ -> /Users/liangsonia/git_resources/dotfile/git/.git-prompt.sh
 .sh_path_and_aliases.d@ -> /Users/liangsonia/git_resources/dotfile/.sh_path_and_aliases.d
-.vimrc@ -> /Users/liangsonia/dotfiles/.vimrc
+.tmux.conf@ -> /Users/liangsonia/git_resources/dotfile/tmux/.tmux.conf
+.zprezto@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zprezto.d
 .zpreztorc@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc
+.zlogin@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zlogin
+.zprofile@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zprofile
+.zlogout@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zlogout
+.zshenv@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zshenv
 .zshrc@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zshrc
 starship.toml@ -> /Users/liangsonia/git_resources/dotfile/starship/starship.toml
-.zlogin@ -> /Users/liangsonia/.zprezto/runcoms/zlogin
-.tmux.conf@ -> .tmux/.tmux.conf
-.zshenv@ -> /Users/liangsonia/.zprezto/runcoms/zshenv
-.zprofile@ -> /Users/liangsonia/.zprezto/runcoms/zprofile
-.zlogout@ -> /Users/liangsonia/.zprezto/runcoms/zlogout
+.vimrc@ -> /Users/liangsonia/dotfiles/.vimrc
+
+
+ln -s /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zlogin .zlogin
+ln -s /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zprofile .zprofile
+ln -s /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zlogout .zlogout
+ln -s /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc/.zshenv .zshenv
