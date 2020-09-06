@@ -18,10 +18,11 @@ end
 hs.hotkey.bind({"alt"}, "space", function()
   local alacritty = hs.application.find('alacritty')
   if alacritty:isFrontmost() then
+    -- hs.alert.show("Hello World!")
     alacritty:hide()
   else
     hs.application.launchOrFocus("/Applications/Alacritty.app")
-    hs.hotkey.bind({"cmd"}, "j", alacrittyTop())
+    -- hs.hotkey.bind({"cmd"}, "j", alacrittyTop())
   end
 end)
 
