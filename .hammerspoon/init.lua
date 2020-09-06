@@ -11,14 +11,10 @@ spoon.ShiftIt:bindHotkeys({
 
 function alacrittyFull()
   return function()
-    local alacritty = hs.application.find('alacritty')
     local win = hs.window.focusedWindow()
-    if alacritty:isFrontmost() then
-      hs.window.focusedWindow():toggleFullScreen()
-    end
+    hs.window.focusedWindow():toggleFullScreen()
   end
 end
-hs.hotkey.bind({"shift", "cmd"}, "j", alacrittyFull())
 
 hs.hotkey.bind({"alt"}, "space", function()
   local alacritty = hs.application.find('alacritty')
@@ -26,6 +22,7 @@ hs.hotkey.bind({"alt"}, "space", function()
     alacritty:hide()
   else
     hs.application.launchOrFocus("/Applications/Alacritty.app")
+    hs.hotkey.bind({"cmd"}, "j", alacrittyFull())
   end
 end)
 
