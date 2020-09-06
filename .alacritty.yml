@@ -19,6 +19,8 @@ window:
     x: 0
     y: 0
 
+background_opacity: 0.7
+
 # font設定
 font:
   size: 12.5
@@ -35,3 +37,68 @@ key_bindings:
   - { key: Down,     mods: Alt,     chars: "\x1b[1;5B"                   }
   - { key: Left,     mods: Alt,     chars: "\x1bb"                       }
   - { key: Right,    mods: Alt,     chars: "\x1bf"                       }
+  - { key: Return,   mods: Command, action: ToggleFullscreen             }
+  # - { key: N,        mods: Command,       action: SpawnNewInstance       } # デフォルト値
+
+# Cobalt 2
+colors:
+  cursor:
+    text: '#fefff2'
+    cursor: '#f0cc09'
+
+  selection:
+    text: '#b5b5b5'
+    background: '#18354f'
+
+  primary:
+    background: '#132738'
+    foreground: '#ffffff'
+
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#38de21'
+    yellow:  '#ffe50a'
+    blue:    '#1460d2'
+    magenta: '#ff005d'
+    cyan:    '#00bbbb'
+    white:   '#bbbbbb'
+
+  bright:
+    black:   '#555555'
+    red:     '#f40e17'
+    green:   '#3bd01d'
+    yellow:  '#edc809'
+    blue:    '#5555ff'
+    magenta: '#ff55ff'
+    cyan:    '#6ae3fa'
+    white:   '#ffffff'
+
+# Colors (Monokai Soda)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#1a1a1a'
+#     foreground: '#c4c5b5'
+
+#   # Normal colors
+#   normal:
+#     black:   '#1a1a1a'
+#     red:     '#f4005f'
+#     green:   '#98e024'
+#     yellow:  '#fa8419'
+#     blue:    '#9d65ff'
+#     magenta: '#f4005f'
+#     cyan:    '#58d1eb'
+#     white:   '#c4c5b5'
+
+#   # Bright colors
+#   bright:
+#     black:   '#625e4c'
+#     red:     '#f4005f'
+#     green:   '#98e024'
+#     yellow:  '#e0d561'
+#     blue:    '#9d65ff'
+#     magenta: '#f4005f'
+#     cyan:    '#58d1eb'
+#     white:   '#f6f6ef'
