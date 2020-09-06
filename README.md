@@ -138,6 +138,10 @@ start Vim and run ``:PlugInstall`` at first time
 
 `ln -s ~/git_resources/dotfile/.alacritty.yml ~/.alacritty.yml`
 
+### hammerspoon
+
+`brew cask install hammerspoon`
+
 `~/.hammerspoon/init.lua`
 
 ```
