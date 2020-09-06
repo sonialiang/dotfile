@@ -1,0 +1,16 @@
+## TODO script 化
+
+.alacritty.yml@ -> /Users/liangsonia/git_resources/dotfile/.alacritty.yml
+.bash_profile@ -> /Users/liangsonia/git_resources/dotfile/bash/.bash_profile
+.common_alias@ -> /Users/liangsonia/git_resources/dotfile/.sh_path_and_aliases.d/.common_alias
+.git-completion.bash@ -> /Users/liangsonia/git_resources/dotfile/git/.git-completion.bash
+.sh_path_and_aliases.d@ -> /Users/liangsonia/git_resources/dotfile/.sh_path_and_aliases.d
+.vimrc@ -> /Users/liangsonia/dotfiles/.vimrc
+.zpreztorc@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zpreztorc
+.zshrc@ -> /Users/liangsonia/git_resources/dotfile/zsh/.zshrc
+starship.toml@ -> /Users/liangsonia/git_resources/dotfile/starship/starship.toml
+.zlogin@ -> /Users/liangsonia/.zprezto/runcoms/zlogin
+.tmux.conf@ -> .tmux/.tmux.conf
+.zshenv@ -> /Users/liangsonia/.zprezto/runcoms/zshenv
+.zprofile@ -> /Users/liangsonia/.zprezto/runcoms/zprofile
+.zlogout@ -> /Users/liangsonia/.zprezto/runcoms/zlogout

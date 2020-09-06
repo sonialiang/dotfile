@@ -128,15 +128,15 @@ start Vim and run ``:PlugInstall`` at first time
 
 ### zsh
 
-`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k`
+<!-- `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k` -->
 
-`p10k configure`
+<!-- `p10k configure` -->
 
-`echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc`
+<!-- `echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc` -->
 
-`~/.zshrc`
+`ln -s ~/git_resources/dotfile/zsh/.zshrc ~/.zshrc`
 
-`~/.alacritty.yml`
+`ln -s ~/git_resources/dotfile/.alacritty.yml ~/.alacritty.yml`
 
 `~/.hammerspoon/init.lua`
 

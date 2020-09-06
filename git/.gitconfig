@@ -1,0 +1,29 @@
+[user]
+	name = YUNG-HSIN LIANG
+	email = bingo605@gmail.com
+[core]
+	precomposeunicode = true
+	quotepath = false
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = $HOME/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = $HOME/.stCommitMsg
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = simple
+[alias]
+	unstage = reset HEAD
+[credential]
+	helper = !aws --profile portfolio_if_developer codecommit credential-helper $@
+	UseHttpPath = true
+[cola]
+	spellcheck = false

@@ -1,0 +1,5 @@
+# alias vim="mvim -v"
+alias fig='docker-compose'
+alias ls='ls -AFG'
+alias rg='rg --hidden'
+alias ll='ls -l'

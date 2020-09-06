@@ -25,10 +25,6 @@ fi
 # starship prompt
 eval "$(starship init zsh)"
 
-## Alias
-alias l='ls'
-alias ll='ls -l'
-
 # change 'ls' color
 export CLICOLOR=1;
 export LSCOLORS=gxfxcxdxbxegedabagacad;
@@ -74,7 +70,11 @@ zshaddhistory() {
     ]]
 }
 
-# alias
-alias ls='ls -AFG'
-alias rg='rg --hidden'
+# ln -s ~/git_resources/dotfile/.sh_path_and_aliases.d/.common_alias ~/.common_alias
+if [ -f ~/.common_alias ]; then
+  source ~/.common_alias
+else
+  print "404: ~/.common_alias not found."
+fi
+
 source <(kubectl completion zsh)
