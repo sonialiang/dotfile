@@ -144,3 +144,60 @@ start Vim and run ``:PlugInstall`` at first time
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 ```
+
+### prezto-contrib
+
+```
+cd $ZPREZTODIR
+git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+```
+
+### powerlevel10k
+
+enable ??????
+
+```zsh/.zpreztorc
+zstyle :prezto:module:prompt theme powerlevel10k
+```
+
+```zsh/.zshrc
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+```
+
+????????? disable ??
+
+```zsh/.zshrc
+eval "$(starship init zsh)"
+```
+
+
+### starship
+
+```zsh/.zshrc
+eval "$(starship init zsh)"
+```
+
+```bash/.bashrc
+eval "$(starship init zsh)"
+```
+
+### spaceship
+
+https://github.com/denysdovhan/spaceship-prompt
+
+enable ??????
+
+```zsh/.zpreztorc
+zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto/contrib/contrib-prompt
+zstyle ':prezto:module:prompt' theme 'spaceship'
+```
+
+### font
+
+```
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
+```

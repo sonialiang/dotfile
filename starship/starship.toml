@@ -1,0 +1,87 @@
+format = "$username"
+# Don't print a new line at the start of the prompt
+# add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "🍜➜"     # The "symbol" segment is being set to "➜"
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+prompt_order = [
+    "username",
+    "hostname",
+    # "gcloud",
+    "kubernetes",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "git_status",
+    "hg_branch",
+    "docker_context",
+    "package",
+    "dotnet",
+    "elixir",
+    "elm",
+    "erlang",
+    "golang",
+    "nodejs",
+    "ocaml",
+    "php",
+    "purescript",
+    "python",
+    "ruby",
+    "rust",
+    "terraform",
+    "zig",
+    "nix_shell",
+    "conda",
+    "memory_usage",
+    "aws",
+    "env_var",
+    "crystal",
+    "cmd_duration",
+    "custom",
+    "line_break",
+    "jobs",
+    "battery",
+    "time",
+    "character",
+]
+
+[hostname]
+ssh_only = false
+format =  "on [$hostname](bold red) "
+trim_at = ".companyname.com"
+disabled = true
+
+[kubernetes]
+symbol = "⛵ "
+style = "dimmed green"
+disabled = false
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+
+[aws]
+disabled = true
+
+[time]
+disabled = true
+format = "🕙[ %T ]"
+utc_time_offset = "-5"
+time_range = "10:00:00-14:00:00"
+
+# [gcloud]
+# disabled = false
+# format = "[$symbol$active]($style) "
+
+[gcloud.region_aliases]
+us-central1 = "uc1"
+asia-northeast1 = "an1"
