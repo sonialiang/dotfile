@@ -76,5 +76,13 @@ if [ -f ~/.common_alias ]; then
 else
   print "404: ~/.common_alias not found."
 fi
+# ln -s ~/git_resources/dotfile/.sh_path_and_aliases.d/.public_path ~/.public_path
+if [ -f ~/.public_path ]; then
+  source ~/.public_path
+else
+  print "404: ~/.public_path not found."
+fi
 
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

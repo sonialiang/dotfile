@@ -65,7 +65,7 @@ The ColorScheme supports most languages and plugins syntax
 
 **Aix** is my personal collection of font.
 
-Find in `fonts` directory：
+Find in `fonts` directory:
 
 * `Aix.MacBookPro15.dfont` - Mac OSX
 * `Aix.dfont`              - Mac OSX
@@ -158,7 +158,7 @@ git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
 
 ### powerlevel10k
 
-enable ??????
+enable の時は以下を
 
 ```zsh/.zpreztorc
 zstyle :prezto:module:prompt theme powerlevel10k
@@ -171,7 +171,7 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ```
 
-????????? disable ??
+かぶるため、以下は disable する
 
 ```zsh/.zshrc
 eval "$(starship init zsh)"
@@ -192,7 +192,7 @@ eval "$(starship init zsh)"
 
 https://github.com/denysdovhan/spaceship-prompt
 
-enable ??????
+enable の時は以下を
 
 ```zsh/.zpreztorc
 zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto/contrib/contrib-prompt

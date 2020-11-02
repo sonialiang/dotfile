@@ -79,3 +79,5 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 source <(kubectl completion bash)
 source ~/.bashrc
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
