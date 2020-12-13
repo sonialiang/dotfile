@@ -1,51 +1,46 @@
-prompt_order = [
-    "time",
-    "username",
-    "hostname",
-    # "gcloud",
-    "kubernetes",
-    "directory",
-    "git_branch",
-    "git_commit",
-    "git_state",
-    "git_status",
-    "hg_branch",
-    "docker_context",
-    "package",
-    "dotnet",
-    "elixir",
-    "elm",
-    "erlang",
-    "golang",
-    "nodejs",
-    "ocaml",
-    "php",
-    "purescript",
-    "python",
-    "ruby",
-    "rust",
-    "terraform",
-    "zig",
-    "nix_shell",
-    "conda",
-    "memory_usage",
-    "aws",
-    "env_var",
-    "crystal",
-    "cmd_duration",
-    "custom",
-    "line_break",
-    "jobs",
-    "battery",
-    "character",
-]
+format = """\
+    $time\
+    $username\
+    $hostname\
+    $gcloud\
+    $kubernetes\
+    $directory\
+    $git_branch\
+    $git_commit\
+    $git_state\
+    $git_status\
+    $hg_branch\
+    $docker_context\
+    $package\
+    $erlang\
+    $golang\
+    $nodejs\
+    $ocaml\
+    $ruby\
+    $rust\
+    $terraform\
+    $zig\
+    $nix_shell\
+    $conda\
+    $memory_usage\
+    $aws\
+    $env_var\
+    $crystal\
+    $cmd_duration\
+    $custom\
+    $line_break\
+    $jobs\
+    $battery\
+    $character\
+"""
 # format = "$username"
 # Don't print a new line at the start of the prompt
 # add_newline = false
 
 # Replace the "❯" symbol in the prompt with "➜"
-[character]      # The name of the module we are configuring is "character"
-symbol = "🍜➜"     # The "symbol" segment is being set to "➜"
+[character]
+success_symbol = "🍜➜"
+error_symbol = "🤬➜"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -82,9 +77,10 @@ disabled = true
 [cmd_duration]
 disabled = true
 
-# [gcloud]
-# disabled = false
-# format = "[$symbol$active]($style) "
+[gcloud]
+disabled = true
+format = "[$symbol$active]($style) "
+style = "bold yellow"
 
 [gcloud.region_aliases]
 us-central1 = "uc1"
