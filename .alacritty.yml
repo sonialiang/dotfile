@@ -19,7 +19,7 @@ window:
     x: 0
     y: 0
 
-background_opacity: 0.7
+background_opacity: 1
 
 # font設定
 font:

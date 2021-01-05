@@ -85,4 +85,11 @@ fi
 
 # source <(kubectl completion zsh)
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# source $(brew --prefix nvm)/nvm.sh
+if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
+  export NVMSH_DIR="/usr/local/opt/nvm"
+  nvm_cmds=(nvm node npm yarn)
+  for cmd in $nvm_cmds ; do
+    alias $cmd="unalias $nvm_cmds && unset nvm_cmds && . $NVMSH_DIR/nvm.sh && $cmd"
+  done
+fi

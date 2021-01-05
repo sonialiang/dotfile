@@ -38,33 +38,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-fbr() {
-  local branches branch
-  branches=$(git branch -vv) &&
-  branch=$(echo "$branches" | fzf +m) &&
-  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-}
-
-fbrm() {
-  local branches branch
-  branches=$(git branch --all | grep -v HEAD) &&
-  branch=$(echo "$branches" |
-          fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
-  git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
-}
-
-fssh() {
-    local sshLoginHost
-    sshLoginHost=`cat ~/.ssh/config | grep -i ^host | awk '{print $2}' | fzf`
-
-    if [ "$sshLoginHost" = "" ]; then
-        # ex) Ctrl-C.
-        return 1
-    fi
-
-    ssh ${sshLoginHost}
-}
-
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
@@ -77,7 +50,41 @@ export LS_COLORS="di=36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
-source <(kubectl completion bash)
+# source <(kubectl completion bash)
 source ~/.bashrc
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+if [ -s "/usr/local/opt/nvm/nvm.sh" ]; then
+  export NVMSH_DIR="/usr/local/opt/nvm"
+  nvm_cmds=(nvm node npm yarn)
+  for cmd in $nvm_cmds ; do
+    alias $cmd="unalias $nvm_cmds && unset nvm_cmds && . $NVMSH_DIR/nvm.sh && $cmd"
+  done
+fi
+# fbr() {
+#   local branches branch
+#   branches=$(git branch -vv) &&
+#   branch=$(echo "$branches" | fzf +m) &&
+#   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+# }
+
+# fbrm() {
+#   local branches branch
+#   branches=$(git branch --all | grep -v HEAD) &&
+#   branch=$(echo "$branches" |
+#           fzf-tmux -d $(( 2 + $(wc -l <<< "$branches") )) +m) &&
+#   git checkout $(echo "$branch" | sed "s/.* //" | sed "s#remotes/[^/]*/##")
+# }
+
+# fssh() {
+#     local sshLoginHost
+#     sshLoginHost=`cat ~/.ssh/config | grep -i ^host | awk '{print $2}' | fzf`
+
+#     if [ "$sshLoginHost" = "" ]; then
+#         # ex) Ctrl-C.
+#         return 1
+#     fi
+
+#     ssh ${sshLoginHost}
+# }

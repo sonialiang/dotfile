@@ -11,3 +11,6 @@ export FLUTTERPATH="$HOME/flutter"
 export PATH=$GOPATH/bin:$FLUTTERPATH/bin:$PATH
 export PATH="/usr/local/opt/avr-gcc@8/bin:$PATH"
 export PATH="/usr/local/opt/arm-gcc-bin@8/bin:$PATH"
+[[ -d ~/.rbenv  ]] && \
+export PATH=${HOME}/.rbenv/bin:${PATH} && \
+eval "$(rbenv init -)"
