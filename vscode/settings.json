@@ -1,0 +1,143 @@
+{
+  // "atomKeymap.promptV3Features": true,
+  // "phpfmt.psr2": false,
+  // "phpformatter.arguments": [
+  //     "--level=psr2"
+  // ],
+  // "alignment.operatorPadding": "left",
+  // "todo-tree.tree.showScanModeButton": false,
+  // "remote.extensionKind": {
+  //     "ms-azuretools.vscode-docker": "workspace"
+  // },
+  // ----------- bookmarks -----------
+  "bookmarks.saveBookmarksInProject": true,
+  // ----------- equality -----------
+  "equality.vars": {
+    "name": "sonialiang",
+    "github": "https://github.com/sonialiang"
+  },
+  // ----------- sync -----------
+  "sync.gist": "6058939825bcfc54cf669fbde16cbb3d",
+  "sync.quietSync": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.forceDownload": false,
+  // ----------- gitlens -----------
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
+  // ----------- vim -----------
+  "vim.disableExtension": true,
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
+  "vim.visualstar": true,
+  "vim.useCtrlKeys": true,
+  // ----------- go -----------
+  "go.goroot": "/usr/local/opt/go/libexec",
+  "go.gopath": "/Users/Liang.YungHsin/go",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.snippetSuggestions": "none"
+  },
+  "go.alternateTools": {
+    "go-langserver": "gopls"
+  },
+  "go.languageServerExperimentalFeatures": {
+    "format": true,
+    "autoComplete": true
+  },
+  "gopls": {
+    "usePlaceholders": true,
+    "staticcheck": true
+  },
+  // ----------- yaml -----------
+  "[yaml]": {
+    "editor.formatOnSave": false
+  },
+  "[yml]": {
+    "editor.formatOnSave": false
+  },
+  // ----------- editor-util -----------
+  "prettier.disableLanguages": ["dockerfile", "markdown"],
+  "files.autoGuessEncoding": true,
+  "files.trimTrailingWhitespace": true,
+  "breadcrumbs.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "git.path": null,
+  "remote.SSH.showLoginTerminal": true,
+  // ----------- editor-terminal -----------
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.confirmOnExit": true,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  // ----------- editor-view -----------
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.visible": true,
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "left",
+  "diffEditor.ignoreTrimWhitespace": true,
+  // ----------- editor-fomat -----------
+  "javascript.format.enable": false,
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.autoIndent": "full",
+  "[svelte]": {
+    // "editor.formatOnSave": false,
+    // "editor.autoIndent": "none",
+    "editor.defaultFormatter": "JamesBirtles.svelte-vscode",
+    "editor.autoIndent": "advanced",
+    "editor.insertSpaces": false
+  },
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "yaml.format.enable": false,
+  "vs-kubernetes": {
+    "disable-linters": ["resource-limits"]
+  },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "browser-preview.startUrl": "http://localhost:3000",
+  "prettier.singleQuote": true,
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
+  "terminal.integrated.shell.osx": "/bin/zsh"
+}
